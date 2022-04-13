@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".notePage"
+    android:orientation="vertical"
+    android:background="@color/black"
+    >
+    <EditText
+        android:padding="10dp"
+        android:height="50dp"
+        android:maxLines="1"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:hint="Title.."
+        android:textColorHint="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/edittext"
+        android:id="@+id/txtTitle"
+        />
+
+    <EditText
+        android:hint="Note.."
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:background="@drawable/edittext"
+        android:id="@+id/txtcontent"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_height="match_parent"
+        android:textSize="30dp"
+        android:gravity="top|left"
+        android:scrollHorizontally="false"
+        android:scrollbars="vertical"
+        android:padding="10dp"
+        android:overScrollMode="always"
+        android:scrollbarStyle="insideInset"
+        android:inputType="textMultiLine"
+        />
+    <TableLayout
+        android:layout_gravity="bottom|center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            >
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:layout_margin="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="sqlGuncelle"
+                android:src="@drawable/refresh"
+                android:backgroundTint="@color/orange"
+                android:id="@+id/btnGuncelle"/>
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/bin"
+                android:backgroundTint="@color/orange"
+                android:layout_margin="10dp"
+                android:onClick="sqlSil"
+                android:id="@+id/btnSil"/>
+        </TableRow>
+    </TableLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

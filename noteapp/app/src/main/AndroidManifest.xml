@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.noteapp">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/notes"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/notes"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.NoteApp">
+        <activity
+            android:name=".notePage"
+            android:label="Edit Page"
+            android:exported="false" />
+        <activity
+            android:name=".notEkle"
+            android:label="Add Note"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:label="Notes"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

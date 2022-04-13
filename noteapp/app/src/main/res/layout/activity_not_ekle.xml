@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".notEkle"
+    android:orientation="vertical"
+    android:background="@color/black"
+
+    >
+
+    <EditText
+        android:hint="Title.."
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:shadowRadius="50"
+        android:background="@drawable/edittext"
+        android:height="50dp"
+        android:maxLines="1"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:id="@+id/txtTitle"
+
+        />
+
+
+        <EditText
+
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:hint="Note.."
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="70dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/edittext"
+            android:id="@+id/txtcontent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="30dp"
+            android:gravity="top|left"
+            android:scrollHorizontally="false"
+            android:scrollbars="vertical"
+            android:padding="10dp"
+            android:overScrollMode="always"
+            android:scrollbarStyle="insideInset"
+            android:inputType="textMultiLine"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/tick"
+        android:backgroundTint="@color/orange"
+        android:layout_gravity="bottom|center"
+        android:onClick="sqlEkle"
+        tools:ignore="OnClick" />
+
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
