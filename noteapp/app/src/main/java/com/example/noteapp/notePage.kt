@@ -33,11 +33,11 @@ class notePage : AppCompatActivity() {
         val title=txtTitle.text
 
         try {
-            //veri tabanı oluşturmak
+
             val veritabani=this.openOrCreateDatabase("NOTE", MODE_PRIVATE, null)
-            //tablo oluşturmak
+
             veritabani.execSQL("CREATE TABLE IF NOT EXISTS note (id INTEGER PRIMARY KEY,titles VARCHAR, notes VARCHAR)")
-            //veri eklemek
+
             veritabani.execSQL("UPDATE note set titles='${title}',notes='${content}' where id=${idNo}")
 
             val intent= Intent(this,MainActivity::class.java)

@@ -37,7 +37,7 @@ class RecyclerAdapter(val idList:ArrayList<Int>,val titleList: ArrayList<String>
         }
     }
 
-    override fun getItemCount(): Int {//kaç adet row olcak
+    override fun getItemCount(): Int {
         return  titleList.size
     }
 
